@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e9173d;
+        }
+
+        header {
+            background-color: #f8f4fa;
+            color: #df3636;
+            text-align: center;
+            padding: 2rem 0;
+            position: relative; /* Add this */
+        }
+
+        .header-content h1 {
+            font-size: 2.5rem;
+        }
+
+        /* Add styles for the round profile picture */
+        .profile-picture {
+            width: 100px; /* Adjust the size as needed */
+            height: 100px;
+            border-radius: 75%; /* Create a circular shape */
+            object-fit: cover; /* To ensure the image fills the circular area */
+            position: absolute; /* Add this */
+            top: 75px; /* Adjust top position as needed */
+            left: 75px; /* Adjust left position as needed */
+        }
+
+        nav {
+            background-color: #fcd1d1;
+            color: #a84fe4;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #f18181;
+        }
+
+        .section-content {
+            background-color: #e6bff8;
+            padding: 2rem;
+            margin: 1rem;
+            border-radius: 20px;
+            box-shadow: 0 0 10px rgba(253, 248, 248, 0.1);
+            text-align: justify;
+        }
+
+        .download-button {
+            background-color: #fdd9d9;
+            color: #fcdede;
+            padding: 0.5rem 1rem;
+            text-decoration: none;
+            border-radius: 20px;
+            display: inline-block;
+            margin-top: 10px;
+            align-self: center;
+        }
+
+        .download-button:hover {
+            background-color: #555;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1rem 0;
+            background-color: #333;
+            color: #fff;
+        }
+
+        ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <!-- Add your profile picture here -->
+            <img src="./"portfolio/Vasanthkumar.JPG class="profile-picture">
+            <h1>Dr.S.Vasanth Kumar </h1>
+            <p>Assistant Professor in Computer Science </p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#about">CAREER OBJECTIVE</a></li>
+            <li><a href="#education">ACADEMIC QUALIFICATION</a></li>
+            <li><a href="#skills">EMPLOYMENT HIGHLIGHTS</a></li>
+            <li><a href="#projects">COMMITTEE RESPONSIBILITIES</a></li>
+            <li><a href="#resume">PROJECT GUIDED</a></li>
+           
+        </ul>
+    </nav>
+
+    <section id="about">
+        <div class="section-content">
+            <h2> CAREER OBJECTIVE </h2>
+            <p></b>Dedicated, enthusiastic individual having More than 9+ years of Experience with outstanding academic, communication, and a passion for teaching is searching for an Assistant Professor position at your Esteemed Institution..</p>
+        </div>
+    </section>
+
+    <section id="ACADEMIC QUALIFICATION">
+        <div class="section-content">
+            <h2>Education</h2>
+            <p> Ph.D., Bharathidasan college of Arts & Science, Erode, Bharathiar University (Submitted).
+                 M.Phil., (Computer Science) from Bharathidasan college of Arts & Science, Erode in (2014).
+                 M.B.A., (Information Systems) from Bharathiar University School of Distance Education, in (2014).
+                 M.Sc., (Computer Science) from Sri Krishna Arts and Science College, Coimbatore, in (2013).
+                 B.C.A., (Computer Applications) from Nandha Arts and Science College, Erode, in (2011).</p>
+            
+            
+        </div>
+    </section>
+
+    <section id="EMPLOYMENT HIGHLIGHTS">
+        <div class="section-content">
+            <h2>EMPLOYMENT HIGHLIGHTS</h2>
+            <ul>
+                <li>Maharaja Co-Education Arts & Science, Erode Affiliated to Bharathiar University, Coimbatore, June
+                    2014 to December 2016 as Assistant Professor – Department of Computer Science.</li>
+                <li>Bharathidasan College of Arts and Science, Erode, Affiliated to Bharathiar University, Coimbatore
+                    December 2016 to till date as Assistant Professor -Department of Computer Science.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="PROJECT GUIDED">
+        <div class="section-content">
+            <h2>PROJECT GUIDED</h2>
+            <ul>
+                <li><a href="#">M.Phil Full Time: 01 Part Time:01 (Produced)</a></li>
+                <li><a href="#"> </a>Guided more than 25 projects for MCA, M.Sc., (Computer Science) & 50+ projects for B.Sc.,and B.C.A.</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="resume">
+    
+        <div class="section-content">
+            <center>
+            <h2>Resume</h2>
+            <a href="./S.Vasanth Kumar Profile.pdf" target="_blank" class="download-button">Download CV</a>
+        </center>
+        </div>
+        
+    </section>
+
+    <footer>
+        <p>&copy; 2023 VIGNESH M</p>
+    </footer>
+
+    <script>
+        // Smooth scrolling to section when clicking on navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+
+                const targetId = this.getAttribute('href').substring(1);
+                const targetElement = document.getElementById(targetId);
+
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
